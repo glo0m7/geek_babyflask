@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% if name %}
+<h1>Hello {{ name }}</h1>
+{% endif %}
+<h1>Are U forget Ur passwd?</h1>
+<form action="/tttttestchpasswd" method="post">
+    {% if flag %}
+    <input type="text" name="name">
+    {% endif %}
+    <input type="text" name="password">
+    <input type="text" name="token">
+    <input type="submit">
+</form>
+</body>
+</html>
