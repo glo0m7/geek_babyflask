@@ -1,11 +1,12 @@
 import os
-import requests
 
-key = '123456'#str(requests.get('127.0.0.1:10000').text)
+with open('LiUU.key') as LiUU:
+    key = LiUU.read()
+
 
 
 basedir = os.path.abspath(os.path.dirname(__file__))
-sqlpath = os.path.join(basedir,'admin.db')
+sqlpath = os.path.join(basedir,'LiUU.db')
 print(basedir)
 
 class Config():

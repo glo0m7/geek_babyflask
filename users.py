@@ -12,6 +12,7 @@ class DB_User(db.Model):
     token = db.Column(db.String(64))
     signature = db.Column(db.String(64))
 
+
 class DB_Admin(db.Model):
     __tablename__ = 'admin'
     id = db.Column(db.Integer,primary_key=True)

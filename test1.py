@@ -1,4 +1,4 @@
-a = []
-a[0] =123
-a[1] =345
-print(a)
+import re
+username = '<>'
+username = re.search(r'<(\w+)>', username).group(1) if re.search(r'<(\w+)>', username) is not None else username
+print(username)

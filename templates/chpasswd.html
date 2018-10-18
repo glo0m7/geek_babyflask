@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//cdnjs.loli.net/ajax/libs/mdui/0.4.1/css/mdui.min.css">
+    <style>
+        #main{
+            background:url('/static/img/chpasswd.jpg');
+            background-size: 100% auto;
+            background-repeat: no-repeat;
+            padding-bottom: 90%;
+        }
+        #username{
+            margin:0 auto; width:400px; height:100px; border:1px
+        }
+    </style>
+    <script type="text/javascript" src="https://cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.min.js"></script>
+</head>
+<!--background="img/back.jpg" style="background-size: 100%;"-->
+
+<body class="mdui-theme-primary-indigo mdui-theme-accent-pink" >
+<div class="mdui-container mdui-shadow-20 mdui-color-theme-50" id="main">
+    <div class="jumbotron text-center text-center mdui-ripple" style="margin-bottom:0; background:url('/static/img/syc.png') center;background-repeat:no-repeat;height: 240px;background-size: 50% auto;"></div>
+
+    <div class="mdui-divider"></div>
+
+    <form method="post" action="/tttttestchpasswd">
+        <div class="" id="username">
+            {% if notlogin %}
+            <div class="mdui-textfield mdui-textfield-floating-label " >
+                <i class="mdui-icon material-icons">&#xe851;</i>
+                <label class="mdui-textfield-label">Username</label>
+                <input class="mdui-textfield-input" type="text" name="name"/>
+            </div>
+            {% else %}
+            <div class="font-weight:700">
+                <h1>Hello {{ name }}</h1>
+            </div>
+            {% endif %}
+            <div class="mdui-textfield mdui-textfield-floating-label " >
+                <i class="mdui-icon material-icons">&#xe88d;</i>
+                <label class="mdui-textfield-label">Newpassword</label>
+                <input class="mdui-textfield-input" type="password" name="password"/>
+            </div>
+            <div class="mdui-textfield mdui-textfield-floating-label">
+                <i class="mdui-icon material-icons">&#xe88d;</i>
+                <label class="mdui-textfield-label">Token</label>
+                <input class="mdui-textfield-input" type="text" name="token"/>
+            </div>
+            <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-theme-accent mdui-float-right mdui-ripple"><h4>修改密码</h4></button>
+        </div>
+    </form>
+
+
+</div>
+<script src="//cdnjs.loli.net/ajax/libs/mdui/0.4.1/js/mdui.min.js"></script>
+<script src="https://code.jquery.com/jquery.js"></script>
+<!-- 包括所有已编译的插件 -->
+<script src="/static/js/bootstrap.min.js"></script>
+</body>
+</html>

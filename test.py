@@ -1,8 +1,8 @@
 
 from users import *
+import hashlib
 
 
-do = 0
 if do:
     db.drop_all()
 else:
@@ -10,7 +10,7 @@ else:
     name = 'LiUU'
     passwd='WoLiYouYouXueZhangTianXiaDiYi'
     token = hashlib.md5((name+passwd).encode("utf8")).hexdigest()
-    flag="SYC{}"
+    flag="SYC{this_is_test_flag}"
     signature = 'LiUU senior is th3 most handsome!'
     #创建库
     db.create_all()

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="/static/css/bootstrap.css">
+    <link rel="stylesheet" href="/static/css/index.css">
+
+    <link rel="stylesheet" href="//cdn.bootcss.com/mdui/0.2.1/css/mdui.min.css">
+
+<style>
+    #main{
+    margin:0 auto; width:400px; height:auto; border:1px
+}
+</style>
+
+</head>
+<body>
+{#<iframe>#}
+<video src="/static/video/l3m0n.mp4" type="video/mp4" autoplay="autoplay" loop="loop" class="video-bg" muted="muted">
+</video>
+<div class="mdui-container ">
+    <div class="mdui-typo-headline-opacity mdui-ripple"><p style="font-size: 85px;color: #ffffff;">l3m0n.py</p></div>
+</div>
+<div class="mdui-container">
+    <div>
+        <p class="mdui-typo-title-opacity mdui-float-right" style="font-size: 25px;color: #ffffff;">
+            漏洞自动扫描利用，一键Getshell
+        </p>
+    </div>
+
+
+</div>
+
+<div class="mdui-container ">
+    <br><br><br><br>
+    <form  action="/newtestproxy" method="POST">
+    <div class="mdui-textfield mdui-textfield-floating-label " id="main" style="margin-bottom: 50%">
+        <h4 style="color: #FFFFFF;text-align: center" >测试中</h4>
+        <label class="mdui-textfield-label" style="color: #e8abc3">URL</label>
+        <input class="mdui-textfield-input mdui-float-right" id="input" type="text" name="url"/>
+            <button class="mdui-btn mdui-float-right" style="color: #FFFFFF"><b>提交</b></button>
+    </div>
+    </form>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+<script src="/static/js/index.js"></script>
+<script src="//cdn.bootcss.com/mdui/0.2.1/js/mdui.min.js"></script>
+{#    </iframe>#}
+</body>
+</html>

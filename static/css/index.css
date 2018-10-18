@@ -1,0 +1,46 @@
+body{
+    margin:0;//body外边距设为0；
+}
+video{
+    position: fixed;//视频定位方式设为固定
+    right: 0;
+    bottom: -100px;//视频位置
+    min-width: 100%;
+    min-height: 100%; //不会因视频尺寸造成页面需要滚动
+    width: auto;
+    height: auto; //尺寸保持原视频大小
+    z-index: -9999; //z轴定位，小于0即可
+}
+/*.video-bg{*/
+/*width: 100%;*/
+/*height: 100%;*/
+/*padding-bottom: 0;*/
+/*float: left;*/
+/*}*/
+h1{
+    background-color:rgba(0,0,0,0.1);
+}
+.input-1{
+    position: relative;
+}
+.my-navbar{
+    background-color: transparent;
+}
+.my-content h1{
+    padding-top: 5%;
+}
+.my-content h1,h2,p{
+    text-align: center;
+}
+.my-btn{
+    border: 10px;
+}
+#main{
+
+}
+#input{
+    font-size: 140%;
+    color: #FFFFFF;
+
+
+}
